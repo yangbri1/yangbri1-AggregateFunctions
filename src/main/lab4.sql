@@ -1,0 +1,20 @@
+-- Given the following table
+--  employee table
+-- |  id  |   first_name   |   last_name   |  salary  |
+-- |------|----------------|---------------|----------|
+-- |1     |'Steve'         |'Garcia'       |67400.00  |
+-- |2     |'Alexa'         |'Smith'        |42500.00  |
+-- |3     |'Steve'         |'Jones'        |99890.99  |
+-- |4     |'Brandon'       |'Smith'        |120000    |
+-- |5     |'Adam'          |'Jones'        |55050.50  |
+-- And some of the following aggregate functions:
+-- `SUM()` - outputs the sum of the values in a single column from the result set
+-- `COUNT()` - outputs the total number of rows
+-- `AVG()` - outputs the average (mean) value of the values in a single column from the result set
+-- `MIN()` - outputs the least value among the values in a single column from the result set
+-- `MAX()` - similar to MIN but outputs the greatest value
+-- `STDEV()` - calculates the standard deviation, for statistical analysis
+-- `FIRST()` - outputs the first value found in a column of the result set
+-- `LAST()` - outputs the last value found in a column of the result set
+-- TODO: Use aggregate functions to produce the highest salary from the employee table,
+--  including only employees with a salary less than 100000.

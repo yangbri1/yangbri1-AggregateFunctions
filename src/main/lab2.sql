@@ -1,0 +1,19 @@
+-- Usually, an aggregate query takes in some columns to perform the aggregation,
+--  just as the SUM function takes the column we are summating.
+-- Since the COUNT function just counts the number of rows, it can be supplied
+--  a wildcard *. For example,
+--      SELECT count(*) FROM Product
+-- will return a single result, the amount of products in the table.
+-- We can make count(*) more useful by applying an additional clause, such as
+--  counting the amount of items matching some criteria:
+--      SELECT count(*) FROM Product WHERE price < 10.0
+-- Given the following table
+-- employee table
+-- |  id  |   first_name   |   last_name   |  salary  |
+-- |------|----------------|---------------|----------|
+-- |1     |'Steve'         |'Garcia'       |67400.00  |
+-- |2     |'Alexa'         |'Smith'        |42500.00  |
+-- |3     |'Steve'         |'Jones'        |99890.99  |
+-- |4     |'Brandon'       |'Smith'        |120000    |
+-- |5     |'Adam'          |'Jones'        |55050.50  |
+-- TODO: Produce the amount of employees in the table that have the last_name 'Smith'.
